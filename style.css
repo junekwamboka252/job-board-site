@@ -11,6 +11,14 @@ body {
   background-color: #f4f4f4;
   color: #333;
 }
+.hero-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit:cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
 
 /* Header */
 header {
@@ -167,47 +175,72 @@ footer {
   background-color: #2980b9;
 }
 
-
-.contact-section {
-  padding: 40px;
-  background-color: #f7f7f7;
-  font-family: Arial, sans-serif;
-}
-
-.contact-container {
-  max-width: 600px;
-  margin: 0 auto;
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-}
-
-.contact-form label {
-  display: block;
-  margin-top: 15px;
-  font-weight: bold;
-}
-
-.contact-form input,
-.contact-form textarea {
+.apply-image {
   width: 100%;
-  padding: 12px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
+  max-width: 250px; /* smaller than before */
+  margin: 10px auto;
+  display: block;
   border-radius: 8px;
 }
 
-.contact-form button {
-  margin-top: 20px;
-  padding: 12px 20px;
-  background-color: #0d6efd;
-  color: white;
-  border: none;
+/* Style for Post a Job form */
+.post-job-form {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post-job-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Post Job Image */
+.post-job-form .post-image {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 20px;
   border-radius: 8px;
+}
+
+/* Form inputs */
+.post-job-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.post-job-form label {
+  font-weight: bold;
+  color: #444;
+}
+
+.post-job-form input,
+.post-job-form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.post-job-form button {
+  padding: 12px;
+  background-color: #007BFF;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-.contact-form button:hover {
-  background-color: #084ec1;
+.post-job-form button:hover {
+  background-color: #0056b3;
 }
+
+
+
